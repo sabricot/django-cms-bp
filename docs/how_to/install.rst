@@ -363,10 +363,10 @@ Also add any (or all) of the following plugins, depending on your needs (see the
 
 Some commonly-used plugins are described in more detail in
 :doc:`/topics/commonly_used_plugins`. There are even more plugins available on
-the django CMS `extensions page`_.
+the django CMS `Addons page`_.
 
 .. _snippet_plugin: https://github.com/divio/djangocms-snippet
-.. _extensions page: http://www.django-cms.org/en/extensions/
+.. _Addons page: http://www.django-cms.org/en/addons/
 
 In addition, make sure you uncomment (enable) ``'django.contrib.admin'``
 
