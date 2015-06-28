@@ -196,7 +196,7 @@ def get_app_patterns():
     # so use public() queryset.
     # This can be done because url patterns are used just in frontend
 
-    title_qs = Title.objects.public().filter(page__site=current_site)
+    title_qs = Title.objects.public().filter()
 
     hooked_applications = {}
 

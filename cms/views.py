@@ -110,7 +110,7 @@ def details(request, slug):
                 languages.append((language, language))
             if languages:
                 # get supported language
-                new_language = get_language_from_request(request)
+                new_language = get_language_from_request(request, page)
                 if new_language in get_public_languages():
                     with force_language(new_language):
                         pages_root = reverse('pages-root')
