@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.utils.translation import get_language
+from django.contrib.sites.models import Site
 
 from cms import constants
 from cms.apphook_pool import apphook_pool
@@ -170,7 +171,7 @@ def page_to_node(page, home, cut):
 class CMSMenu(Menu):
     def get_nodes(self, request):
         page_queryset = get_page_queryset(request)
-        site = current_site(request)
+        site = Site.objects.get_current()
         lang = get_language_from_request(request)
 
         filters = {
